@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>갯길안 · 개인정보 처리방침</title>
+  <style>
+    :root {
+      --bg: #0b1c22;
+      --bg-soft: #10262e;
+      --card: #143038;
+      --line: #2a4a54;
+      --text: #e7f2f4;
+      --muted: #9bb4bb;
+      --accent: #3db8a8;
+      --accent-dim: #2a8f84;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #071418 0%, var(--bg) 40%, #0d242b 100%);
+      color: var(--text);
+      line-height: 1.65;
+      min-height: 100vh;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+    header {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .brand {
+      color: var(--accent);
+      font-size: 0.85rem;
+      letter-spacing: 0.04em;
+      margin: 0 0 0.5rem;
+      font-weight: 600;
+    }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin: 0 0 0.75rem;
+      letter-spacing: -0.02em;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin: 0;
+    }
+    h2 {
+      font-size: 1.15rem;
+      margin: 2rem 0 0.75rem;
+      color: var(--accent);
+      font-weight: 650;
+    }
+    p, li { color: var(--text); font-size: 0.98rem; }
+    p { margin: 0.6rem 0; }
+    ul {
+      margin: 0.5rem 0 0.75rem;
+      padding-left: 1.25rem;
+    }
+    li { margin: 0.35rem 0; }
+    .note {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--accent-dim);
+      border-radius: 8px;
+      padding: 0.9rem 1rem;
+      margin: 1.25rem 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .en {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--line);
+    }
+    .en h2 { color: #7ecfc4; }
+    .en .meta { margin-bottom: 1rem; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <p class="brand">askkorandolab · 갯길안 (HaerujilSafe)</p>
+      <h1>개인정보 처리방침</h1>
+      <p class="meta">시행일: 2026년 9월 11일<br>본 문서는 App Store / TestFlight 공개용 요약입니다. 법률 자문이 아닙니다.</p>
+    </header>
+
+    <div class="note">
+      위치·궤적·수확 스팟·일지는 <strong style="color:var(--text)">이 기기에만</strong> 있습니다.
+      계정·광고·분석 SDK·실시간 서버 공유가 없습니다.
+      개발자 서버로 개인 위치를 수집·보관하지 않습니다.
+    </div>
+
+    <h2>1. 개요</h2>
+    <p>
+      갯길안(HaerujilSafe, 이하 “앱”)은 갯벌·연안 활동 시 물때·날씨·궤적·일지 등을
+      기기의 기능을 활용해 돕는 앱입니다. askkorandolab이 운영합니다.
+    </p>
+    <p>
+      앱은 사용자 계정을 만들지 않으며, 광고·분석(트래킹) SDK를 포함하지 않습니다.
+      개인 위치·궤적·스팟·일지를 개발자가 운영하는 서버에 올려 보관하지 않습니다.
+    </p>
+
+    <h2>2. 기기에서 다루는 정보</h2>
+    <p>앱 기능을 위해 기기에서 다룰 수 있는 정보는 예를 들면 다음과 같습니다.</p>
+    <ul>
+      <li><strong>위치·궤적</strong>: 세션·귀환·스팟 후보 등. 기본 저장 위치는 이 기기입니다.</li>
+      <li><strong>수확 스팟·위험/회피 표시·그날 일지</strong>: 사용자가 저장한 기록. 이 기기에만 남습니다.</li>
+      <li><strong>사진·학습용 이미지</strong>(해당 기능 사용 시): 기기 저장이 기본이며, 위치 포함은 기본으로 꺼져 있을 수 있습니다.</li>
+      <li><strong>센서·동작</strong>(해당 기능 사용 시): 동작·손목 움직임 등은 코칭·후보 안내용으로 기기에서 처리합니다.</li>
+    </ul>
+    <p>
+      “이 기기만 저장”이 기본이며, 실시간으로 위치를 서버에 스트리밍하지 않습니다.
+      구조 신호(화면·손전등 점멸·소리)도 좌표를 서버로 올리지 않습니다.
+    </p>
+
+    <h2>3. 외부로 나갈 수 있는 요청 (개인정보 DB가 아님)</h2>
+    <p>
+      물때·날씨·교통 등 공공·시스템 정보를 보여 주기 위해, 기기가 직접
+      공공 API 또는 Apple 시스템 API에 요청할 수 있습니다.
+      예시(연동·가용 여부는 기기·지역·권한에 따라 다름):
+    </p>
+    <ul>
+      <li>해양 관련 공공 정보(예: KHOA 연동)</li>
+      <li>날씨(예: WeatherKit)</li>
+      <li>교통·도로 정보(예: ITS, 도로공사 등)</li>
+    </ul>
+    <p>
+      이는 기기가 해당 서비스에 필요한 범위의 요청을 보내는 것이며,
+      askkorandolab이 사용자의 개인 위치·일지를 수집해 별도의 개인정보 DB를 운영하는 것이 아닙니다.
+      각 외부 서비스의 처리 방침은 해당 제공자를 따릅니다.
+    </p>
+
+    <h2>4. 사용자가 직접 보내는 공유</h2>
+    <p>
+      친구 공유, 구조 문자, 시스템 공유 시트 등은
+      <strong>사용자가 기기에서 직접 보낼 때만</strong> 이루어집니다.
+      앱이 백그라운드에서 자동으로 위치를 제3자에게 실시간 공유하지 않습니다.
+    </p>
+
+    <h2>5. 구조·긴급</h2>
+    <p>
+      위급 시 구조 요청은 <strong>119</strong> 등 공식 긴급 채널을 이용하세요.
+      앱의 점멸·소리·안내는 기기 위 보조 기능이며, 구조를 대행하거나
+      위치를 구조 기관 서버로 자동 전송하지 않습니다.
+    </p>
+
+    <h2>6. 보관·삭제</h2>
+    <p>
+      기기 내 기록은 사용자가 앱·기기 설정에서 삭제하거나 앱을 삭제하면
+      해당 기기에서 함께 제거되는 것이 일반적입니다.
+      개발자 서버에 개인 위치·일지 DB를 두지 않으므로, 서버측 “계정 삭제” 절차는 해당되지 않습니다.
+    </p>
+
+    <h2>7. 아동·미성년</h2>
+    <p>
+      앱은 아동을 대상으로 개인정보를 수집하도록 설계되지 않았습니다.
+      보호자의 지도 아래 사용해 주세요.
+    </p>
+
+    <h2>8. 문의</h2>
+    <p>
+      개인정보·앱 관련 문의는
+      <strong>App Store Connect에 등록한 피드백 이메일</strong>로 보내 주세요.
+      본 웹 페이지에는 전화·개인 이메일·좌표를 게시하지 않습니다.
+    </p>
+
+    <h2>9. 변경</h2>
+    <p>
+      방침이 바뀌면 이 페이지의 시행일을 갱신합니다.
+      앱 안 설정·도움말의 기기 내 고지도 함께 참고해 주세요.
+    </p>
+
+    <div class="note">
+      본 문서는 정보 제공 목적이며 법률 자문이 아닙니다.
+      실제 권한·동작은 기기 OS, 앱 버전, 사용자 설정에 따라 달라질 수 있습니다.
+    </div>
+
+    <section class="en" lang="en" id="en">
+      <p class="brand">askkorandolab · HaerujilSafe (갯길안)</p>
+      <h2>Privacy Policy (English summary)</h2>
+      <p class="meta">Effective date: September 11, 2026. Not legal advice.</p>
+      <ul>
+        <li>Location, tracks, harvest spots, and the diary stay <strong>on this device</strong>.</li>
+        <li>No account, ads, analytics SDK, or live server sharing of personal location.</li>
+        <li>We do not collect or store personal location on a developer-operated server or PII database.</li>
+        <li>Friend sharing and distress SMS happen only when you send them yourself from the device.</li>
+        <li>Tide, weather, and traffic may be requested from public or system APIs on-device (e.g. KHOA-related services, WeatherKit, ITS / highway APIs). That is not us running a personal-data backend.</li>
+        <li>For rescue, call <strong>119</strong> (or local emergency services). The app does not dispatch rescue or auto-upload coordinates to emergency servers.</li>
+        <li>Contact: use the <strong>feedback email registered in App Store Connect</strong>. This page does not publish phone numbers, personal emails, or coordinates.</li>
+      </ul>
+    </section>
+
+    <footer>
+      © askkorandolab · 갯길안 (HaerujilSafe)<br>
+      시행일 2026-09-11
+    </footer>
+  </main>
+</body>
+</html>

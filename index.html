@@ -98,11 +98,11 @@
     <header>
       <p class="brand">askkorandolab · 갯길안 (HaerujilSafe)</p>
       <h1>개인정보 처리방침</h1>
-      <p class="meta">시행일: 2026년 9월 11일<br>본 문서는 App Store / TestFlight 공개용 요약입니다. 법률 자문이 아닙니다.</p>
+      <p class="meta">시행일: 2026년 9월 17일<br>본 문서는 App Store / TestFlight 공개용 요약입니다. 법률 자문이 아닙니다.</p>
     </header>
 
     <div class="note">
-      위치·궤적·수확 스팟·일지는 <strong style="color:var(--text)">이 기기에만</strong> 있습니다.
+      위치·궤적·수확 스팟·일지·SOS 연락처 번호는 <strong style="color:var(--text)">이 기기에만</strong> 있습니다.
       계정·광고·분석 SDK·실시간 서버 공유가 없습니다.
       개발자 서버로 개인 위치를 수집·보관하지 않습니다.
     </div>
@@ -118,16 +118,18 @@
     </p>
 
     <h2>2. 기기에서 다루는 정보</h2>
-    <p>앱 기능을 위해 기기에서 다룰 수 있는 정보는 예를 들면 다음과 같습니다.</p>
+    <p>앱 기능을 위해 기기에서 다루거나, 기능 요청을 위해 외부 서비스로 보낼 수 있는 정보는 예를 들면 다음과 같습니다.</p>
     <ul>
-      <li><strong>위치·궤적</strong>: 세션·귀환·스팟 후보 등. 기본 저장 위치는 이 기기입니다.</li>
+      <li><strong>정확한 위치(Precise Location)</strong>: 세션·궤적·귀환·스팟 후보 등은 <strong>기기 저장</strong>이 기본입니다. 날씨·조위 등 기능 요청 시 Apple WeatherKit·KHOA(국립해양조사원) 등 해당 서비스로 <strong>좌표가 전달될 수 있습니다</strong>. 개발자 개인정보 DB에는 올리지 않습니다.</li>
       <li><strong>수확 스팟·위험/회피 표시·그날 일지</strong>: 사용자가 저장한 기록. 이 기기에만 남습니다.</li>
-      <li><strong>사진·학습용 이미지</strong>(해당 기능 사용 시): 기기 저장이 기본이며, 위치 포함은 기본으로 꺼져 있을 수 있습니다.</li>
+      <li><strong>사진·카메라</strong>(해당 기능 사용 시): <strong>기기 안</strong>에서만 처리·저장합니다. 서버 업로드 수집이 없습니다.</li>
+      <li><strong>SOS 연락처 번호</strong>: <strong>기기 로컬</strong>에만 저장합니다. 계정 동기화·광고 타깃팅이 없습니다.</li>
       <li><strong>센서·동작</strong>(해당 기능 사용 시): 동작·손목 움직임 등은 코칭·후보 안내용으로 기기에서 처리합니다.</li>
     </ul>
     <p>
-      “이 기기만 저장”이 기본이며, 실시간으로 위치를 서버에 스트리밍하지 않습니다.
-      구조 신호(화면·손전등 점멸·소리)도 좌표를 서버로 올리지 않습니다.
+      “이 기기만 저장”이 기본이며, 실시간으로 위치를 개발자 서버에 스트리밍하지 않습니다.
+      구조 신호(화면·손전등 점멸·소리)도 좌표를 개발자 서버로 올리지 않습니다.
+      계정·광고·분석은 없습니다.
     </p>
 
     <h2>3. 외부로 나갈 수 있는 요청 (개인정보 DB가 아님)</h2>
@@ -137,9 +139,9 @@
       예시(연동·가용 여부는 기기·지역·권한에 따라 다름):
     </p>
     <ul>
-      <li>해양 관련 공공 정보(예: KHOA 연동)</li>
-      <li>날씨(예: WeatherKit)</li>
-      <li>교통·도로 정보(예: ITS, 도로공사 등)</li>
+      <li>해양 관련 공공 정보(예: KHOA 연동 — 요청 시 좌표 전달 가능)</li>
+      <li>날씨(예: WeatherKit — 요청 시 좌표 전달 가능)</li>
+      <li>교통·도로 정보(예: ITS, 한국도로공사(EX) 등 — 해당 기능 사용 시)</li>
     </ul>
     <p>
       이는 기기가 해당 서비스에 필요한 범위의 요청을 보내는 것이며,
@@ -149,9 +151,9 @@
 
     <h2>4. 사용자가 직접 보내는 공유</h2>
     <p>
-      친구 공유, 구조 문자, 시스템 공유 시트 등은
-      <strong>사용자가 기기에서 직접 보낼 때만</strong> 이루어집니다.
-      앱이 백그라운드에서 자동으로 위치를 제3자에게 실시간 공유하지 않습니다.
+      친구 공유, <strong>SMS 초안(구조 문자 등)</strong>, 시스템 공유 시트는
+      <strong>사용자가 기기에서 직접 보낼 때만</strong> 전송됩니다.
+      앱이 백그라운드에서 자동으로 SMS를 발송하거나 위치를 제3자에게 실시간 공유하지 않습니다.
     </p>
 
     <h2>5. 구조·긴급</h2>
@@ -195,12 +197,13 @@
     <section class="en" lang="en" id="en">
       <p class="brand">askkorandolab · HaerujilSafe (갯길안)</p>
       <h2>Privacy Policy (English summary)</h2>
-      <p class="meta">Effective date: September 11, 2026. Not legal advice.</p>
+      <p class="meta">Effective date: September 17, 2026. Not legal advice.</p>
       <ul>
-        <li>Location, tracks, harvest spots, and the diary stay <strong>on this device</strong>.</li>
-        <li>No account, ads, analytics SDK, or live server sharing of personal location.</li>
-        <li>We do not collect or store personal location on a developer-operated server or PII database.</li>
-        <li>Friend sharing and distress SMS happen only when you send them yourself from the device.</li>
+        <li><strong>Precise Location</strong> is stored on this device for sessions, tracks, and return guidance. Coordinates may be sent to Apple WeatherKit or KHOA (and similar) when those features request data. We do not put personal location in a developer PII database.</li>
+        <li>Photos and camera use (when available) stay <strong>on-device only</strong>; there is no server upload collection.</li>
+        <li>SMS drafts (including distress messages) are sent only when <strong>you send them yourself</strong> from the device.</li>
+        <li>SOS contact numbers are stored <strong>locally on the device</strong> only.</li>
+        <li>Location, tracks, harvest spots, and the diary stay on this device. No account, ads, analytics SDK, or live developer-server sharing of personal location.</li>
         <li>Tide, weather, and traffic may be requested from public or system APIs on-device (e.g. KHOA-related services, WeatherKit, ITS / highway APIs). That is not us running a personal-data backend.</li>
         <li>For rescue, call <strong>119</strong> (or local emergency services). The app does not dispatch rescue or auto-upload coordinates to emergency servers.</li>
         <li>Contact: use the <strong>feedback email registered in App Store Connect</strong>. This page does not publish phone numbers, personal emails, or coordinates.</li>
@@ -209,7 +212,7 @@
 
     <footer>
       © askkorandolab · 갯길안 (HaerujilSafe)<br>
-      시행일 2026-09-11
+      시행일 2026-09-17
     </footer>
   </main>
 </body>

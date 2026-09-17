@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>갯길안 (HaerujilSafe) · 고객 지원 및 도움말</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --primary: #0284c7;
+      --primary-dark: #0369a1;
+      --warning-bg: #fffbeb;
+      --warning-border: #fde68a;
+      --warning-text: #92400e;
+      --danger-bg: #fef2f2;
+      --danger-border: #fecaca;
+      --danger-text: #991b1b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Segoe UI", sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .brand {
+      color: var(--primary);
+      font-size: 0.9rem;
+      letter-spacing: 0.02em;
+      margin: 0 0 0.5rem;
+      font-weight: 600;
+    }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin: 0 0 0.5rem;
+      letter-spacing: -0.02em;
+      color: var(--text);
+    }
+    .meta {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin: 0;
+    }
+    .alert-card {
+      background: var(--danger-bg);
+      border: 1px solid var(--danger-border);
+      border-radius: 10px;
+      padding: 1.1rem 1.25rem;
+      margin: 1.5rem 0 2rem;
+      color: var(--danger-text);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .alert-card strong {
+      display: block;
+      margin-bottom: 0.4rem;
+      font-size: 1.02rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      margin: 2.25rem 0 0.85rem;
+      color: var(--text);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem 1.4rem;
+      margin-bottom: 1.25rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    }
+    .card h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.05rem;
+      font-weight: 650;
+      color: var(--primary-dark);
+    }
+    .card p {
+      margin: 0.4rem 0;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+    .card ul {
+      margin: 0.5rem 0 0.25rem;
+      padding-left: 1.25rem;
+    }
+    .card li {
+      font-size: 0.93rem;
+      margin-bottom: 0.35rem;
+      color: var(--text);
+    }
+    .contact-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--primary);
+      border-radius: 8px;
+      padding: 1.2rem 1.35rem;
+      margin: 1.5rem 0;
+    }
+    .contact-box p {
+      margin: 0.4rem 0;
+      font-size: 0.95rem;
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 3.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <p class="brand">askkorandolab</p>
+      <h1>갯길안 (HaerujilSafe) 지원 센터</h1>
+      <p class="meta">앱 사용 문의, 도움말 및 의견 접수</p>
+    </header>
+
+    <div class="alert-card">
+      <strong>⚠️ 긴급 상황 시 안내 (필독)</strong>
+      본 앱은 소방청(119)이나 해양경찰(122)로의 <strong>자동 긴급 구조 신고 또는 자동 문자 발송 기능을 제공하지 않습니다.</strong><br>
+      갯벌 고립, 조류 휩쓸림, 안전사고 등 실제 긴급 상황이 발생한 경우 지체 없이 <strong>해양경찰(122)</strong> 또는 <strong>소방청(119)</strong>으로 직접 연락하여 구조를 요청하시기 바랍니다.
+    </div>
+
+    <h2>자주 묻는 질문 및 주요 도움말</h2>
+
+    <div class="card">
+      <h3>1. 위치 권한 (Precise Location)</h3>
+      <p>
+        갯길안은 현장에서 사용자 위치와 이동 궤적을 지도에 표시하고, 진입 지점으로의 복귀 방향(나침반/헤딩)을 안내하기 위해 위치 권한을 사용합니다.
+      </p>
+      <ul>
+        <li>사용자의 위치 좌표는 기기 내에서만 처리되며, 개발자의 외부 서버로 수집·보관되지 않습니다.</li>
+        <li>연안 날씨 및 조석 정보 조회를 위해 위치 좌표가 Apple WeatherKit 및 국립해양조사원(KHOA) 공공 API로 전달될 수 있습니다.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>2. 날씨 및 조석 정보</h3>
+      <p>
+        국립해양조사원(KHOA) 조위 정보를 바탕으로 간조/만조 시각과 물때 흐름을 제공하며, Apple WeatherKit을 통해 풍속, 풍향, 기온, 강수, 해무 가능성을 안내합니다.
+      </p>
+      <ul>
+        <li>제공되는 모든 조석 및 기상 정보는 안전 활동을 돕기 위한 <strong>참고용 정보</strong>입니다.</li>
+        <li>기상 급변 및 현장 지형 특성에 따라 오차가 발생할 수 있으므로, 항상 현장에서 직접 바다 상황을 확인하시고 간조 알림 시 지체 없이 안전지대로 이동하시기 바랍니다.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>3. 건강(HealthKit) 권한</h3>
+      <p>
+        Apple Watch와 함께 사용 시 갯벌 보행 및 해루질 활동 중 소모된 <strong>활동 에너지(Active Energy Burned, kcal)</strong>를 활동 일지에 표시하기 위한 선택적 권한입니다.
+      </p>
+      <ul>
+        <li>읽기 전용(Read-only)으로만 접근하며, 건강 데이터를 수정하거나 외부로 전송하지 않습니다.</li>
+        <li>광고나 사용자 추적 용도로 사용되지 않으며, 권한을 거부하더라도 앱의 다른 모든 기능을 정상적으로 이용할 수 있습니다.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>4. Apple Watch 연동</h3>
+      <p>
+        Apple Watch 컴패니언 앱을 통해 손목 위에서 간조까지 남은 시간, 현재 물때 상태, 복귀 나침반 방향을 간편하게 확인할 수 있습니다.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>5. 카메라 및 사진 권한</h3>
+      <p>
+        당일 활동 일지에 현장 사진을 기록하고 보관하기 위해 사용됩니다. 사진은 기기 내부 저장소에만 보관되며 외부 서버로 업로드되지 않습니다.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>6. 비상 알림 및 SMS 발송 기능</h3>
+      <p>
+        비상 상황 시 사이렌 소리와 화면 스트로브 점멸을 켤 수 있으며, 등록된 비상 연락처로 현재 GPS 위치 좌표가 포함된 SMS 작성 화면을 호출합니다.
+      </p>
+      <ul>
+        <li>SMS 발송은 시스템 표준 메시지 화면에서 <strong>사용자가 내용을 확인하고 직접 전송 버튼을 눌러야</strong> 발송됩니다. 백그라운드 자동 발송은 이루어지지 않습니다.</li>
+      </ul>
+    </div>
+
+    <h2>문의 및 의견 접수</h2>
+    <div class="contact-box">
+      <p>앱 사용 중 오류가 발생했거나 기능 제안, 기타 문의 사항이 있으시면 아래 공식 지원 이메일로 연락해 주시기 바랍니다.</p>
+      <p><strong>공식 지원 이메일:</strong> <a href="mailto:korando79@naver.com">korando79@naver.com</a></p>
+      <p><small style="color:var(--text-muted)">* 접수된 문의는 순차적으로 확인 후 신속히 답변 드리겠습니다.</small></p>
+    </div>
+
+    <footer>
+      <div>© 2026 askkorandolab · 갯길안 (HaerujilSafe)</div>
+      <div><a href="https://skahn79-jpg.github.io/haerujilsafe-privacy/">개인정보 처리방침</a></div>
+    </footer>
+  </main>
+</body>
+</html>
